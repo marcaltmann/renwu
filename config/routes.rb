@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :categories, :projects
+  resources :categories
+
+  resources :projects do
+    resources :tasks
+  end
 
   root to: redirect('/categories')
 end

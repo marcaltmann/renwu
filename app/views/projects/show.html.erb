@@ -1,0 +1,10 @@
+<div class="uk-container">
+  <h1 class="uk-margin-top">
+    <%= @project.name %>
+  </h1>
+
+  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+    <%= render @tasks %>
+  </div>
+
+</div>

@@ -1,7 +1,10 @@
+<% index = task_counter %>
 <div>
-  <div class="uk-card uk-card-default uk-card-body">
-    <h3 class="uk-card-title">
-      <%= task.content %>
-    </h3>
-  </div>
+  <%= link_to project_task_path(task.project, task) do %>
+    <div class="uk-card <%= index == 0 ? "uk-card-primary" : "uk-card-default" %> uk-card-body">
+      <h3 class="uk-card-title">
+        <%= task.content %>
+      </h3>
+    </div>
+  <% end %>
 </div>
