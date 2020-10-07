@@ -3,4 +3,6 @@ class Task < ApplicationRecord
 
   belongs_to :project
   belongs_to :category
+
+  validates :content, presence: true, length: { minimum: 2, maximum: 64 }
 end

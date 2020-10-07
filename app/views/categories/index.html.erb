@@ -1,13 +1,11 @@
-<div class="uk-container">
-  <h1 class="uk-margin-top">
-    <%= t "categories.index.heading" %>
-  </h1>
+<h1 class="uk-margin-top">
+  <%= t "categories.index.heading" %>
+</h1>
 
-  <ul class="uk-list">
-    <% @categories.each do |category| %>
-      <li>
-        <%= link_to category.name, category_path(category) %>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<ul class="uk-list">
+  <% @categories.each do |category| %>
+    <li>
+      <%= link_to category.name, category_path(category) %>
+    </li>
+  <% end %>
+</ul>

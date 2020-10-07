@@ -1,10 +1,12 @@
-<div class="uk-container">
-  <h1 class="uk-margin-top">
-    <%= @task.content %>
-  </h1>
+<h1 class="uk-margin-top">
+  <%= @task.content %>
+</h1>
 
-  <p>
-    <%= link_to 'Back to project', project_path(@task.project) %>
-  </p>
+<p class="uk-margin-top">
+  Category: <%= @task.category.name %>
+</p>
 
-</div>
+<p>
+  <%= link_to "Edit", edit_project_task_path(@task.project, @task) %> |
+  <%= link_to "Back to project", project_path(@task.project) %>
+</p>

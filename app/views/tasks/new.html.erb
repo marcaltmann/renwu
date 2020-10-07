@@ -1,0 +1,13 @@
+<h1 class="uk-margin-top">
+  <%= t("tasks.new.heading") %>
+</h1>
+
+<p>
+  <%= @project.name %>
+</p>
+
+<%= render "form" %>
+
+<p class="uk-margin-top">
+  <%= link_to t("tasks.new.back"), project_path(@project) %>
+</p>

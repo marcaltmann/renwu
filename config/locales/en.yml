@@ -34,4 +34,18 @@ en:
 
   categories:
     index:
-      heading: Categories
+      heading: "Categories"
+
+  projects:
+    show:
+      new_task: "Create new task"
+
+  tasks:
+    edit:
+      heading: "Edit task"
+      back: "Cancel"
+    new:
+      heading: "Create new task"
+      back: "Back to project"
+    form:
+      content_placeholder: "e.g. Write email to boss"

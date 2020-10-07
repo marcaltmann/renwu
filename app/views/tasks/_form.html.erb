@@ -1,0 +1,13 @@
+<%= form_with(model: [@project, @task], local: true) do |task_form| %>
+  <div>
+    <% @task.errors.full_messages.each do |msg| %>
+      <p><%= msg %></p>
+    <% end %>
+  </div>
+
+  <%= task_form.text_field :content, placeholder: t("tasks.form.content_placeholder") %>
+
+  <%= task_form.collection_select :category_id, Category.all, :id, :name %>
+
+  <%= task_form.submit %>
+<% end %>

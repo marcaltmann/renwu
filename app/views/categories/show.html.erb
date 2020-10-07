@@ -1,10 +1,7 @@
-<div class="uk-container">
-  <h1 class="uk-margin-top">
-    <%= @category.name %>
-  </h1>
+<h1 class="uk-margin-top">
+  <%= @category.name %>
+</h1>
 
-  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-    <%= render @category.tasks %>
-  </div>
-
+<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+  <%= render @category.tasks %>
 </div>
